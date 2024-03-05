@@ -1,0 +1,273 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+img{
+    width: 100%;
+}
+p{
+    margin: 0;
+    padding: 0;
+}
+.container .navbar, .container .features{
+    max-width: 1100px;
+    margin: auto;
+} 
+
+.container .navbar{
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .navbar ul{
+    display: flex;
+}
+
+.logo{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+.primaryColor{
+    color: rgb(32, 163, 135);
+}
+
+.container .navbar ul li{
+    padding-left: 20px;
+}
+
+.container .navbar ul li a{
+    text-decoration: none;
+    color: #444;
+    text-transform: uppercase;
+}
+
+.container .navbar ul li a.active{
+    color: rgb(32, 163, 135);
+    border-bottom: solid 3px rgb(32, 163, 135);
+}
+
+
+
+
+.container .showcase{
+    width: 100%;
+    background: url(img/sea.jpg) no-repeat center center/cover;
+    height: 70vh;
+    display: block;
+    position: relative;
+}
+
+.container .showcase::after{
+    content: '';
+    background-color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.container .showcase .title{
+    background-color: #111;
+    max-width: 600px;
+    color: #fff;
+    border-radius: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    text-align: center;
+    z-index: 1;
+   }
+
+.container .showcase .title p{
+    margin-top: 0;
+}
+
+.container .features h2, .container .features p{
+    text-align: center;
+    }
+h2, h3{
+    margin-bottom: 0px;
+}
+
+.container .features .icons{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 20px;
+}
+
+.container .features .icons .icon{
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(32, 163, 135);
+    color: #fff;
+    font-weight: bold;
+}
+
+.container .features .icons div p{
+  margin: 10px 0 20px 0;
+}
+
+.container .twoView{
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 30px;
+       
+}
+
+.container .twoView .flexTwo{
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.container .flexTwo .img{
+    max-width: 500px;
+}
+.container .flexTwo .list{
+    text-align: center;
+}
+
+.container .flexTwo .list h3{
+    margin-bottom: 20px;
+}
+
+.container .flexTwo .list p{
+    margin-top: 15px;
+}
+
+.container .addressBar{
+    
+    background-color: rgba(0, 0, 0, 0.8);
+      color: #fff;
+    padding: 20px;
+   
+}
+.container .lastWidth{
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+   text-align: center; 
+}
+.container .lastWidth h4{
+    text-transform: uppercase;
+}
+.container .lastWidth li{
+margin-top: 5px;
+}
+
+.container .lastWidth form{
+    margin-top: 10px;
+}
+.container .lastWidth form button{
+    background-color: #000;
+    color: #fff;
+    padding: 3px;
+    border-radius: 10px;
+
+}
+
+.container footer{
+    background-color: rgb(32, 163, 135);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* about */
+
+.container .headerbar{
+    background-color: #444;
+    color: #fff;
+    padding: 10px 0px 10px 150px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.container .text{
+    max-width: 1100px;
+    margin: 10px auto 30px;
+    text-align: center;
+}
+
+.container .text p{
+    margin-top: 20px;
+}
+
+/* services */
+
+.darkBck{
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+.lightBck{
+    background-color: rgb(32, 163, 135);
+    color: #fff;
+    padding: 10px;
+}
+
+.text h3{
+    margin-bottom: 20px;
+}
+
+.text .center{
+    margin-bottom: 20px;
+}
+
+.text form input, .text form textarea{
+    min-width: 400px;
+    padding: 10px;
+} 
+
+.text form button{
+    display: block;
+    margin: auto;
+    min-width: 400px;
+    padding: 10px;
+    background-color: #111;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .container .navbar{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+    
+    .container .twoView .flexTwo{
+        display: block;
+        text-align: center;
+    
+    }
+    .container .flexTwo .img{
+        max-width: 500px;
+        margin: auto;
+    }
+    .container .lastWidth form button{
+        display: block;
+        margin: 5px auto 0px;
+        background-color: #000;
+        color: #fff;
+        padding: 3px;
+        border-radius: 10px;
+    }
+    
+}
+
